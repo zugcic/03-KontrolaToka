@@ -1,7 +1,9 @@
+UPUTA: U donjem tekstu su projekti slo≈æeni prema slijedu kojim se rje≈°avaju. U svakom projektu se nalazi komentar TODO koji opisuje ≈°to treba napraviti. Cjelokupna lista TODO se mo≈æe vidjeti u Visual Studiju u prozoru "Task List" ("View" - "Task List"). Dvoklik na stavku u toj listi ƒáe otvoriti odgovarajuƒáu datoteku i pozicionirati kurzor na komentar u kodu.
+
 DosegImena
 ----------
 
-Kako se dohvaÊaju lokalne varijable, a kako Ëlnovi klase
+Kako se dohva√¶aju lokalne varijable, a kako √®lnovi klase
 
 
 GrananjeIf
@@ -13,14 +15,14 @@ Prikaz grananja if-else
 UsporedbaRealnihBrojeva
 -----------------------
 
-Kod usporedbe realnih brojeva treba paziti da zbog konaËne preciznosti i zaokruûivanja 
+Kod usporedbe realnih brojeva treba paziti da zbog kona√®ne preciznosti i zaokru≈æivanja 
 usporedba dva realna broja ne mora biti ispravna.
 
 
-UvjetnoPridruûivanje
+UvjetnoPridru≈æivanje
 ---------------------
 
-Primjer naredbe uvjetnog pridruûivanja ?:
+Primjer naredbe uvjetnog pridru≈æivanja ?:
 
 
 GrananjeSwitch
@@ -38,19 +40,19 @@ Usporedba IL koda generiranog for odnosno while petljom.
 PetljaDoWhile
 -------------
 
-Razlika izmeu petlji while i do-while.
+Razlika izme√∞u petlji while i do-while.
 
 
 NaredbeBreakContinue
 --------------------
 
-Primjer koriötenja naredbi continue (vraÊanje na poËetak petlje) i break (iskakanje iz petlje).
+Primjer kori≈°tenja naredbi continue (vra√¶anje na po√®etak petlje) i break (iskakanje iz petlje).
 
 
 Foreach
 -------
 
-Primjer foreach petlje te koriötenja kljuËne rijeËi var u foreach petlji.
+Primjer foreach petlje te kori≈°tenja klju√®ne rije√®i var u foreach petlji.
 
 
 ForeachVsFor
