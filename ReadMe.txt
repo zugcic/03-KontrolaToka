@@ -1,4 +1,8 @@
-UPUTA: U donjem tekstu su projekti složeni prema slijedu kojim se rješavaju. U svakom projektu se nalazi komentar TODO koji opisuje što treba napraviti. Cjelokupna lista TODO se može vidjeti u Visual Studiju u prozoru "Task List" ("View" - "Task List"). Dvoklik na stavku u toj listi će otvoriti odgovarajuću datoteku i pozicionirati kurzor na komentar u kodu.
+UPUTA: U donjem tekstu su projekti složeni prema slijedu kojim se rješavaju. 
+U svakom projektu se nalazi komentar TODO koji opisuje što treba napraviti. 
+Cjelokupna lista TODO se može vidjeti u Visual Studiju u prozoru "Task List" 
+("View" - "Task List"). Dvoklik na stavku u toj listi će otvoriti odgovarajuću 
+datoteku i pozicionirati kurzor na komentar u kodu.
 
 DosegImena
 ----------
