@@ -13,7 +13,7 @@ namespace Vsite.CSharp
             {
                 int broj = int.Parse(unos);
 
-                // TODO: Napisati uvjetno pridruživanje koje će ovisno o dijeljivosti broja varijabli odgovor dodijeliti vrijednost "paran" ili "neparan"
+                // TODO: Napisati uvjetno pridruživanje ?: koje će ovisno o dijeljivosti broja varijabli odgovor dodijeliti vrijednost "paran" ili "neparan"
                 string odgovor = "paran";
 
                 Console.WriteLine("Broj {0} je {1}", broj, odgovor);
