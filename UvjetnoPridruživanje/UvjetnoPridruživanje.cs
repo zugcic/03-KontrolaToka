@@ -18,6 +18,11 @@ namespace Vsite.CSharp
 
                 Console.WriteLine("Broj {0} je {1}", broj, odgovor);
 
+                // TODO: Napisati isto pridruživanje ali korištenjem uvjetnog grananja if
+                string odgovor2 = "paran";
+
+                Console.WriteLine("Broj {0} je {1}", broj, odgovor2);
+
             }
             catch (Exception)
             {
