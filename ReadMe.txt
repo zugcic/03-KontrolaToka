@@ -42,8 +42,8 @@ forVsWhile
 Usporedba IL koda generiranog for odnosno while petljom.
 
 
-PetljaDoWhile
--------------
+PetljeWhileDoWhile
+------------------
 
 Razlika između petlji while i do-while.
 
