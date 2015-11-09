@@ -8,7 +8,7 @@ datoteku i pozicionirati kurzor na komentar u kodu.
 DosegImena
 ----------
 
-Kako se dohvaćaju lokalne varijable, a kako člnovi klase
+Kako se dohvaćaju lokalne varijable, a kako članovi klase
 
 
 GrananjeIf

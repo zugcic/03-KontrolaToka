@@ -14,7 +14,7 @@ namespace Vsite.CSharp
 
             {
                 ++brojBacanja;
-                bacanje = generatorSlučajnih.Next(1, 6); // generira slučajni broj između 1 i 6
+                bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine("{0}. pokušaj: {1}", brojBacanja, bacanje);
             }
 
@@ -22,7 +22,7 @@ namespace Vsite.CSharp
             // TODO: Napisati petlju u kojoj se kocka baca sve dok brojPređenihPolja ne postane veći od 12
 
             {
-                bacanje = generatorSlučajnih.Next(1, 6); // generira slučajni broj između 1 i 6
+                bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine("{0} + {1}", brojPređenihPolja + bacanje);
                 brojPređenihPolja += bacanje;
             }
