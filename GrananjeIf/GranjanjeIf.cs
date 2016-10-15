@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp
 {
-    class GranjanjeIf
+    public class GranjanjeIf
     {
         static void Main(string[] args)
         {
@@ -12,20 +12,26 @@ namespace Vsite.CSharp
             try
             {
                 int broj = int.Parse(unos);
-
-                // TODO: Napisati grananja if koja će za uneseni broj:
-                // 1. provjeriti je li broj paran. Ako je broj paran, ispisat će poruku "broj N je djeljiv s 2", a inače će
-                // 2. provjeriti je li broj djeljiv s 3. Ako je broj djeljiv, ispisat će poruku "broj N je djeljiv s 3", a inače će
-                // 3. provjeriti je li broj djeljiv s 5. Ako je broj djeljiv, ispisat će poruku "broj N je djeljiv s 5", a inače će
-                //    ispisati da nije djeljiv niti s jednim brojem
-
-
+                ProvjeriDjeljivost(broj);
             }
             catch (Exception)
             {
                 Console.WriteLine("Neispravan unos");
             }
+            Console.WriteLine("GOTOVO!");
             Console.ReadKey();
+        }
+
+        public static void ProvjeriDjeljivost(int broj)
+        {
+            // TODO: Napisati grananja if koja će za uneseni broj:
+            // 1. provjeriti je li broj paran. 
+            //    Ako je broj paran, treba ispisati poruku "broj je djeljiv s 2", a inače će
+            // 2. provjeriti je li broj djeljiv s 3. 
+            //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 3", a inače će
+            // 3. provjeriti je li broj djeljiv s 5. 
+            //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 5", a inače 
+            // 4. treba ispisati "broj nije djeljiv s 2, 3 niti 5"
         }
     }
 }
