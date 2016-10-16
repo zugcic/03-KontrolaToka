@@ -58,6 +58,7 @@
     <Compile Include="TestForVsWhile.cs" />
     <Compile Include="TestGrananjaIf.cs" />
     <Compile Include="TestGrananjaSwitch.cs" />
+    <Compile Include="TestNaredbeBreakContinue.cs" />
     <Compile Include="TestPetljeWhileDoWhile.cs" />
     <Compile Include="TestUsporedbeRealnihBrojeva.cs" />
     <Compile Include="TestUvjetnogPridruživanja.cs" />

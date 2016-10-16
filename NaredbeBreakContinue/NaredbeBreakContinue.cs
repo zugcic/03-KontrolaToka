@@ -2,34 +2,46 @@
 
 namespace Vsite.CSharp
 {
-    class NaredbeBreakContinue
+    public class NaredbeBreakContinue
     {
+        public static int ZbrojiDoNSveKojiSuDjeljiviSaD(int n, int d)
+        {
+            int zbroj = 0;
+            for (int i = 1; i <= n; ++i)
+            {
+                // TODO: Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje naredbom continue)
+
+                zbroj += i;
+            }
+            return zbroj;
+        }
+
+        public static int ZbrojiDoNSveKojiSuDjeljiviSaDAliSamoDoPrvogDjeljivogSaD2(int n, int d, int d2)
+        {
+            int zbroj = 0;
+            for (int i = 1; i <= n; ++i)
+            {
+                // TODO: Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+
+
+                // TODO: Ako je i djeljiv sa d2, tada treba prekinuti petlju
+
+
+                zbroj += i;
+            }
+            return zbroj;
+        }
+
         static void Main(string[] args)
         {
-            Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
+            Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaD(10, 2)); // trebalo bi ispisati 20
+            Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaD(10, 3)); // trebalo bi ispisati 18
+            Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaD(10, 5)); // trebalo bi ispisati 15
 
-            int zbroj = 0;
+            Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaDAliSamoDoPrvogDjeljivogSaD2(10, 2, 4)); // trebalo bi ispisati 2
+            Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaDAliSamoDoPrvogDjeljivogSaD2(10, 3, 8)); // trebalo bi ispisati 18
 
-            while (zbroj < 100)
-            {
-                int slučajniBroj = generatorSlučajnih.Next(2, 15); // generira slučajni broj između 2 i 14
-                Console.WriteLine(slučajniBroj);
-
-                // TODO: Ako je broj paran, ne dodaje se (tj. treba se vratiti na početak petlje)
-
-
-                // TODO: Ako je broj dijeljiv sa 7, tada treba prekinuti petlju
-
-
-
-                Console.WriteLine("{0} + {1}", zbroj + slučajniBroj);
-                zbroj += slučajniBroj;
-            }
-
-            Console.WriteLine("Zbroj = {0}", zbroj);
-
-            // TODO: Pokrenite program, provjerite njegovu ispravnost a ispis prekopirajte u datoteku "Naredbe break i continue.txt" koja je dio projekta
-
+            Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
     }
