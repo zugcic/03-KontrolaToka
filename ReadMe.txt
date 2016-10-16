@@ -20,7 +20,7 @@ Prikaz grananja if-else
 UsporedbaRealnihBrojeva
 -----------------------
 
-Kod usporedbe realnih brojeva treba paziti da zbog konačne preciznosti i zaokruživanja 
+Kod usporedbe realnih brojeva treba paziti da zbog konačne preciznosti i binarnog zapisa 
 usporedba dva realna broja ne mora biti ispravna.
 
 
