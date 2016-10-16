@@ -58,10 +58,3 @@ Foreach
 -------
 
 Primjer foreach petlje te korištenja ključne riječi var u foreach petlji.
-
-
-ForeachVsFor
------------
-
-Usporedba trajanja pristupa preko for i foreach petlje (pogledati generirani IL kod
-u ILDASM-u)
