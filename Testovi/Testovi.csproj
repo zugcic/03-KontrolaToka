@@ -69,10 +69,6 @@
       <Project>{4895f638-4074-47ed-98b3-a7bbcb519b77}</Project>
       <Name>DosegImena</Name>
     </ProjectReference>
-    <ProjectReference Include="..\foreach-for\ForeachVsFor.csproj">
-      <Project>{5c23daaa-6e81-4fe4-ab43-1e11fd546414}</Project>
-      <Name>ForeachVsFor</Name>
-    </ProjectReference>
     <ProjectReference Include="..\foreach\Foreach.csproj">
       <Project>{6f492c77-6f5a-42a9-8a70-6ea50e990b36}</Project>
       <Name>Foreach</Name>

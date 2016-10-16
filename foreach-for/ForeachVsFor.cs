@@ -6,6 +6,22 @@ namespace Vsite.CSharp
 {
     class ForeachVsFor
     {
+        static double ZbrojiUForPetlji(IList<double> kolekcija)
+        {
+            double zbroj = 0;
+            for (int i = 0; i < kolekcija.Count; ++i)
+                zbroj += kolekcija[i];
+            return zbroj;
+        }
+
+        static double ZbrojiUForEachPetlji(IEnumerable<double> kolekcija)
+        {
+            double zbroj = 0;
+            foreach (double broj in kolekcija)
+                zbroj += broj;
+            return zbroj;
+        }
+
         static void Main(string[] args)
         {
             Random generatorSlučajnih = new Random();
@@ -16,7 +32,8 @@ namespace Vsite.CSharp
             for (int i = 0; i < brojElemenata; ++i)
                 brojevi[i] = generatorSlučajnih.NextDouble();
 
-            double zbroj = 0;
+            ZbrojiUForEachPetlji(brojevi);
+            ZbrojiUForPetlji(brojevi);
 
             Console.Write("Niz obilazimo foreach: ");
 
@@ -24,57 +41,38 @@ namespace Vsite.CSharp
             Stopwatch stoperica = new Stopwatch();
             stoperica.Start();
 
-            foreach (double broj in brojevi)
-            {
-                zbroj += broj;
-            }
+            ZbrojiUForEachPetlji(brojevi);
 
             stoperica.Stop();
             Console.WriteLine(stoperica.ElapsedTicks);
-            stoperica.Reset();
-
             Console.Write("Niz obilazimo for:     ");
-            
-            stoperica.Start();
 
-            for (int i = 0; i < brojevi.Length; ++i)
-            {
-                zbroj += brojevi[i];
-            }
+            stoperica.Restart();
+
+            ZbrojiUForPetlji(brojevi);
 
             stoperica.Stop();
             Console.WriteLine(stoperica.ElapsedTicks);
+
 
             List<double> listaBrojeva = new List<double>(brojevi);
-
-            stoperica.Reset();
             Console.Write("Listu obilazimo for:     ");
+            stoperica.Restart();
 
-            stoperica.Start();
-
-            for (int i = 0; i < listaBrojeva.Count; ++i)
-            {
-                zbroj += listaBrojeva[i];
-            }
+            ZbrojiUForPetlji(listaBrojeva);
 
             stoperica.Stop();
             Console.WriteLine(stoperica.ElapsedTicks);
-            stoperica.Reset();
 
             Console.Write("Listu obilazimo foreach: ");
+            stoperica.Restart();
 
-            stoperica.Start();
-
-            foreach (double broj in listaBrojeva)
-            {
-                zbroj += broj;
-            }
+            ZbrojiUForEachPetlji(listaBrojeva);
 
             stoperica.Stop();
             Console.WriteLine(stoperica.ElapsedTicks);
 
-            // TODO: Pokrenuti program 5 puta i sve ispise kopirati u datoteku "ForEachVsFor.txt" pridruženu ovom projektu.
-
+            Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
 
         }
