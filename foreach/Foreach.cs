@@ -4,27 +4,27 @@ using System.Collections;
 
 namespace Vsite.CSharp
 {
-    class Foreach
+    public class Foreach
     {
-        static void Main(string[] args)
+        public static void Ispiši(IEnumerable kolekcija)
+        {
+            // TODO: Napisati foreach petlju tako da ispisuje sve članove kolekcije
+
+        }
+
+        public static void Main(string[] args)
         {
             string[] imena = new string[] { "Pero", "Janko", "Mijo" };
             Ispiši(imena);
 
-            int[] brojevi = new int[] { 1, 5, 3, 11 };
-            Ispiši(brojevi);
+            Queue<int> intovi = new Queue<int>(new int[] { 1, 5, 3, 11 });
+            Ispiši(intovi);
 
-            List<double> dablovi = new List<double>();
-            dablovi.Add(3.14);
-            // TODO: Dodati još 4 različita broja te pozvati metodu Ispiši. Rezultat ispisa prekopirati u datoteku "Foreach.txt" pridruženu projektu
+            List<double> dablovi = new List<double> { 3.14, 4.15, 2.78 };
+            Ispiši(dablovi);
 
-
-        }
-
-        static void Ispiši(IEnumerable kolekcija)
-        {
-            foreach (var element in kolekcija)
-                Console.WriteLine(element);
+            Console.WriteLine("GOTOVO!!!");
+            Console.ReadKey();
         }
     }
 }
