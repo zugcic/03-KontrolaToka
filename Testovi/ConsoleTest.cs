@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.IO;
 
 namespace Vsite.CSharp.Testovi
@@ -15,14 +15,27 @@ namespace Vsite.CSharp.Testovi
                 output.Enqueue(text);
             }
 
-            public string Get()
+            public override void WriteLine(int number)
             {
-                if (output.Count > 0)
-                    return output.Dequeue();
-                return string.Empty;
+                output.Enqueue(number);
             }
 
-            Queue<string> output = new Queue<string>();
+            public string GetString()
+            {
+                return (string)output.Dequeue();
+            }
+
+            public int GetInt()
+            {
+                return (int)output.Dequeue();
+            }
+
+            public bool IsEmpty
+            {
+                get { return output.Count == 0; }
+            }
+
+            Queue output = new Queue();
         }
 
         protected ConsoleTestWriter cw = null;

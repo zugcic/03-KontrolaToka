@@ -10,8 +10,8 @@ namespace Vsite.CSharp.Testovi
         {
             DosegImena p = new DosegImena();
             p.IspišiAove();
-            Assert.AreEqual("Lokalna varijabla", cw.Get());
-            Assert.AreEqual("Član klase", cw.Get());
+            Assert.AreEqual("Lokalna varijabla", cw.GetString());
+            Assert.AreEqual("Član klase", cw.GetString());
         }
     }
 }

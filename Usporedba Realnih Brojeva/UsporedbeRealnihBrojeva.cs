@@ -8,8 +8,7 @@ namespace Vsite.CSharp
         {
             double tri = 3.0;
 
-            // TODO: provjeriti što će ispisati donje dvije usporedbe te 
-            // promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+            // TODO: provjeriti što će ispisati donje dvije usporedbe te promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
             if (JednakiSu((1.0 - 1.0 / tri), (2.0 / tri)))
                 Console.WriteLine("1 - 1/3 jednako je 2/3");
             else

@@ -55,6 +55,7 @@
     <Compile Include="ConsoleTest.cs" />
     <Compile Include="TestDosegaImena.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestForVsWhile.cs" />
     <Compile Include="TestGrananjaIf.cs" />
     <Compile Include="TestGrananjaSwitch.cs" />
     <Compile Include="TestUsporedbeRealnihBrojeva.cs" />

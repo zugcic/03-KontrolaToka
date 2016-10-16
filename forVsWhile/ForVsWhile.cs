@@ -2,21 +2,28 @@
 
 namespace Vsite.CSharp
 {
-    class ForVsWhile
+    public class ForVsWhile
     {
+        public static void PetljaFor(int n)
+        {
+            // TODO: Napisati petlju for koja će ispisati brojeve od 0 do n
+        }
+
+        public static void PetljaWhile(int n)
+        {
+            // TODO: Napisati petlju while koja će ispisati brojeve od 0 do n
+        }
+
         static void Main(string[] args)
         {
-            // TODO: Prevesti program te programom ILDasm pogledati međukod. Pripadajući međukod kopirati u datoteke "Petlja for.txt", odnosno "Petlja while.txt" koje su dio projekta
+            PetljaFor(10);
 
-            for (int i = 0; i < 10; ++i)
-                Console.WriteLine(i);
+            PetljaWhile(10);
 
-            int j = 0;
-            while (j < 10)
-            {
-                Console.WriteLine(j);
-                ++j;
-            }
+            // TODO: Prevesti program te programom ILDasm pogledati međukod. Međukodove metoda PetljaFor i PetljaWhile kopirati u datoteke "Petlja for.txt", odnosno "Petlja while.txt" koje su dio projekta
+
+            Console.WriteLine("GOTOVO!!!");
+            Console.ReadKey();
         }
     }
 }
