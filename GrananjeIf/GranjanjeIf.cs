@@ -13,12 +13,14 @@ namespace Vsite.CSharp
             {
                 int broj = int.Parse(unos);
                 ProvjeriDjeljivost(broj);
+
+                Console.WriteLine("GOTOVO!");
             }
             catch (Exception)
             {
-                Console.WriteLine("Neispravan unos");
+                Console.WriteLine("Neispravan unos, pokušaj ponovo.");
             }
-            Console.WriteLine("GOTOVO!");
+
             Console.ReadKey();
         }
 

@@ -7,25 +7,29 @@ namespace Vsite.CSharp.Testovi
     public class TestUvjetnogPridruživanja : ConsoleTest
     {
         [TestMethod]
-        public void TestIspišiParnostUvjetnimPridruživanjem()
+        public void TestUvjetnogPridruživanja_IspišiParnostUvjetnimPridruživanjem()
         {
-            UvjetnoPridruživanje.IspišiParnostUvjetnimPridruživanjem(1);
+            IspišiParnost.UvjetnimPridruživanjem(1);
             Assert.AreEqual("Broj 1 je neparan", cw.Get());
-            UvjetnoPridruživanje.IspišiParnostUvjetnimPridruživanjem(2);
+            IspišiParnost.UvjetnimPridruživanjem(2);
             Assert.AreEqual("Broj 2 je paran", cw.Get());
-            UvjetnoPridruživanje.IspišiParnostUvjetnimPridruživanjem(3);
+            IspišiParnost.UvjetnimPridruživanjem(3);
             Assert.AreEqual("Broj 3 je neparan", cw.Get());
+            IspišiParnost.UvjetnimPridruživanjem(4);
+            Assert.AreEqual("Broj 4 je paran", cw.Get());
         }
 
         [TestMethod]
-        public void TestIspišiParnostGrananjemIfPridruživanjem()
+        public void TestUvjetnogPridruživanja_IspišiParnostGrananjemIf()
         {
-            UvjetnoPridruživanje.IspišiParnostUvjetnimPridruživanjem(1);
+            IspišiParnost.GrananjemIf(1);
             Assert.AreEqual("Broj 1 je neparan", cw.Get());
-            UvjetnoPridruživanje.IspišiParnostUvjetnimPridruživanjem(2);
+            IspišiParnost.GrananjemIf(2);
             Assert.AreEqual("Broj 2 je paran", cw.Get());
-            UvjetnoPridruživanje.IspišiParnostUvjetnimPridruživanjem(3);
+            IspišiParnost.GrananjemIf(3);
             Assert.AreEqual("Broj 3 je neparan", cw.Get());
+            IspišiParnost.GrananjemIf(4);
+            Assert.AreEqual("Broj 4 je paran", cw.Get());
         }
     }
 }
