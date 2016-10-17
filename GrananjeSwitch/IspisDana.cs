@@ -14,6 +14,7 @@ namespace Vsite.CSharp
             {
                 // TODO: Napisati grane case za svaki dan u tjednu tako da vraćaju "ponedjeljak" za DayOfWeek.Monday, "utorak" za DayOfWeek.Tuesday itd.
 
+                // TODO: Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
                 default:
                     throw new NotImplementedException();
             }
@@ -25,6 +26,7 @@ namespace Vsite.CSharp
             {
                 // TODO: Napisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
 
+                // TODO: Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
                 default:
                     throw new NotImplementedException();
             }
