@@ -42,7 +42,7 @@ namespace Vsite.CSharp.Testovi
                 Assert.IsTrue(unos.StartsWith("Bacanje: "));
                 string broj = unos.Substring("Bacanje: ".Length);
                 int i = int.Parse(broj);
-                Assert.IsTrue(i >= 1 && i < 6);
+                Assert.IsTrue(i >= 1 && i <= 6);
                 unos = cw.GetString();
                 Assert.IsTrue(unos.StartsWith("Ukupno: "));
                 broj = unos.Substring("Ukupno: ".Length);
