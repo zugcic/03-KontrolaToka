@@ -10,7 +10,7 @@ namespace Vsite.CSharp
             int brojBacanja = 0;
             int bacanje = 0;
 
-            // TODO: Napisati petlju do-while koja ispisuje rezultat bacanja sve dok ne padne na 6
+            // TODO: Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
 
             {
                 //++brojBacanja;
@@ -25,7 +25,7 @@ namespace Vsite.CSharp
         {
             Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
 
-            // TODO: Napisati petlju while koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
+            // TODO: Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
 
             {
                 int bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
