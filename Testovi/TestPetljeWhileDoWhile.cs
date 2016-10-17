@@ -31,7 +31,7 @@ namespace Vsite.CSharp.Testovi
         [TestMethod]
         public void PetljeWhileDoWhile_BacajDokNeProđe12Polja()
         {
-            int početno = 8;
+            int početno = 5;
             int ukupno = PetljeWhileDoWhile.BacajDokNeProđe12Polja(početno);
             Assert.IsTrue(ukupno >= 12 && ukupno < 18);
             Assert.IsFalse(cw.IsEmpty);
