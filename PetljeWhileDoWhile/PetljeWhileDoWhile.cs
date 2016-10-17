@@ -13,7 +13,7 @@ namespace Vsite.CSharp
             // TODO: Napisati petlju do-while koja ispisuje rezultat bacanja sve dok ne padne na 6
 
             {
-                ++brojBacanja;
+                //++brojBacanja;
                 bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine("{0}. pokušaj: {1}", brojBacanja, bacanje);
             }
