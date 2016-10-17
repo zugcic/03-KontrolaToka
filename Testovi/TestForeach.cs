@@ -9,7 +9,7 @@ namespace Vsite.CSharp.Testovi
     public class TestForeach : ConsoleTest
     {
         [TestMethod]
-        public void TestForeach_IspišiZaNizStringova()
+        public void Foreach_IspišiZaNizStringova()
         {
             Foreach.Ispiši(new string[] { "Ivo", "Tomislav", "Andrej" });
             Assert.AreEqual("Ivo", cw.GetString());
@@ -18,7 +18,7 @@ namespace Vsite.CSharp.Testovi
         }
 
         [TestMethod]
-        public void TestForeach_IspišiZaQueue()
+        public void Foreach_IspišiZaQueue()
         {
             Foreach.Ispiši(new Queue(new string[] { "Ivo", "Tomislav", "Andrej" }));
             Assert.AreEqual("Ivo", cw.GetString());

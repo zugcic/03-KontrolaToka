@@ -8,7 +8,7 @@ namespace Vsite.CSharp.Testovi
     public class TestForVsWhile : ConsoleTest
     {
         [TestMethod]
-        public void TestForVsWhile_PetljaFor()
+        public void ForVsWhile_PetljaFor()
         {
             ForVsWhile.PetljaFor(5);
             Assert.AreEqual(0, cw.GetInt());
@@ -21,7 +21,7 @@ namespace Vsite.CSharp.Testovi
         }
 
         [TestMethod]
-        public void TestForVsWhile_PetljaWhile()
+        public void ForVsWhile_PetljaWhile()
         {
             ForVsWhile.PetljaWhile(5);
             Assert.AreEqual(0, cw.GetInt());

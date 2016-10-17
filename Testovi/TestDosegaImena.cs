@@ -6,7 +6,7 @@ namespace Vsite.CSharp.Testovi
     public class TestDosegaImena : ConsoleTest
     {
         [TestMethod]
-        public void TestIspisaAova()
+        public void DosegImena()
         {
             DosegImena p = new DosegImena();
             p.IspišiAove();

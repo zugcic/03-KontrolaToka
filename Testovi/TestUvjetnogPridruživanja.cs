@@ -7,7 +7,7 @@ namespace Vsite.CSharp.Testovi
     public class TestUvjetnogPridruživanja : ConsoleTest
     {
         [TestMethod]
-        public void TestUvjetnogPridruživanja_IspišiParnostUvjetnimPridruživanjem()
+        public void UvjetnoPridruživanje_IspišiParnostUvjetnimPridruživanjem()
         {
             IspišiParnost.UvjetnimPridruživanjem(1);
             Assert.AreEqual("Broj 1 je neparan", cw.GetString());
@@ -20,7 +20,7 @@ namespace Vsite.CSharp.Testovi
         }
 
         [TestMethod]
-        public void TestUvjetnogPridruživanja_IspišiParnostGrananjemIf()
+        public void UvjetnoPridruživanje_IspišiParnostGrananjemIf()
         {
             IspišiParnost.GrananjemIf(1);
             Assert.AreEqual("Broj 1 je neparan", cw.GetString());

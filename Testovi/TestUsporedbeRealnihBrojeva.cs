@@ -7,7 +7,7 @@ namespace Vsite.CSharp.Testovi
     public class TestUsporedbeRealnihBrojeva
     {
         [TestMethod]
-        public void TestUsporedbeDvijeTrećine()
+        public void UsporedbeRealnihBrojeva_UsporedbaDvijeTrećine()
         {
             double tri = 3.0;
             Assert.IsTrue(UsporedbeRealnihBrojeva.JednakiSu((1.0 - 1.0 / tri), (2.0 / tri)));
@@ -16,7 +16,7 @@ namespace Vsite.CSharp.Testovi
         }
 
         [TestMethod]
-        public void TestUsporedbeTriDesetine()
+        public void UsporedbeRealnihBrojeva_UsporedbaTriDesetine()
         {
             double tri = 3.0;
             Assert.IsTrue(UsporedbeRealnihBrojeva.JednakiSu(tri * 0.1, 0.3));
