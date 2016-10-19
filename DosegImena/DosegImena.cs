@@ -17,7 +17,7 @@ namespace Vsite.CSharp
         {
             string a = "Lokalna varijabla";
 
-            // TODO: Ispisati vrijednosti lokalne varijable a
+            Console.WriteLine(a);
 
             // TODO: Ispisati vrijednost člana klase a
 
