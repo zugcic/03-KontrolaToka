@@ -6,12 +6,20 @@ namespace Vsite.CSharp
     {
         public static void PetljaFor(int n)
         {
-            // TODO: Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
+           
+            for (int i = 0; i <= n; ++i) {
+                Console.WriteLine(i);
+            }
         }
 
         public static void PetljaWhile(int n)
         {
-            // TODO: Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
+            int i = 0;
+            while (i <= n) {
+                Console.WriteLine(i++);
+            }
+                
+            
         }
 
         static void Main(string[] args)
