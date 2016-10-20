@@ -26,14 +26,23 @@ namespace Vsite.CSharp
 
         public static void ProvjeriDjeljivost(int broj)
         {
-            // TODO: Napisati grananja if koja će za uneseni broj:
-            // 1. provjeriti je li broj paran. 
-            //    Ako je broj paran, treba ispisati poruku "broj je djeljiv s 2", a inače će
-            // 2. provjeriti je li broj djeljiv s 3. 
-            //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 3", a inače će
-            // 3. provjeriti je li broj djeljiv s 5. 
-            //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 5", a inače 
-            // 4. treba ispisati "broj nije djeljiv s 2, 3 niti 5"
+           
+            if (broj % 2 == 0) //djeljiv sa 2
+            {
+                Console.WriteLine("broj je djeljiv s 2");
+            }
+            else if (broj % 3 == 0) //djeljiv sa 3
+            {
+                Console.WriteLine("broj je djeljiv s 3");
+            }
+            else if (broj % 5 == 0) //djeljiv sa 5
+            {
+                Console.WriteLine("broj je djeljiv s 5");
+            }
+            else {          //nije djeljiv ni sa 2,3,5
+                Console.WriteLine("broj nije djeljiv s 2, 3 niti 5");
+            }
+           
         }
     }
 }
