@@ -25,7 +25,17 @@ namespace Vsite.CSharp
 
         public static bool JednakiSu(double broj1, double broj2)
         {
-            return broj1 == broj2;
+            //if (broj1 == broj2)
+            //    return true;
+
+            //double razlika= Math.Abs(broj1 - broj2);
+            //double delta=Math.Max(Math.Abs(broj1), Math.Abs(broj2))*0.0000001;
+            //return (razlika < 0.1);
+
+            long l1=BitConverter.DoubleToInt64Bits(broj1);
+            long l2 = BitConverter.DoubleToInt64Bits(broj2);
+            return Math.Abs(l1 - l2) < 4;  //najprecizniji način usporedbe preko konverzije
+
         }
     }
 }
