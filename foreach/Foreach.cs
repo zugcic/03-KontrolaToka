@@ -6,9 +6,14 @@ namespace Vsite.CSharp
 {
     public class Foreach
     {
-        public static void Ispiši(IEnumerable kolekcija)
+        public static void Ispiši(IEnumerable kolekcija) //IEnumerable-> sučelje kod kojeg postoji 
+                                                        //iterator koji šeće sekvencijalno po članovima kolekcije
         {
-            // TODO: Napisati foreach petlju tako da ispisuje sve članove kolekcije
+           
+
+            foreach(var član in kolekcija) {
+                Console.WriteLine(član);
+            }
 
         }
 
@@ -17,7 +22,7 @@ namespace Vsite.CSharp
             string[] imena = new string[] { "Pero", "Janko", "Mijo" };
             Ispiši(imena);
 
-            Queue<int> intovi = new Queue<int>(new int[] { 1, 5, 3, 11 });
+            Queue<int> intovi = new Queue<int>(new int[] { 1, 5, 3, 11 });  //ATP-ovi implementiraju IEnumerable sučelje
             Ispiši(intovi);
 
             List<double> dablovi = new List<double> { 3.14, 4.15, 2.78 };
