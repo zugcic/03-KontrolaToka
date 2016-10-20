@@ -17,12 +17,14 @@ namespace Vsite.CSharp
         {
             string a = "Lokalna varijabla";
 
-            Console.WriteLine(a);
+            Console.WriteLine(a); // ispis lokalne varijable a
 
-            // TODO: Ispisati vrijednost člana klase a
+            Console.WriteLine(this.a); //ipsis člana klase
 
             {
-                // TODO: Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
+
+                //int a = 5;//C# ne dozovoljava definiranje isog naziva varijabli unutar bloka
+                
 
             }
         }
